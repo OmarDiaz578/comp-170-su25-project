@@ -33,6 +33,35 @@ class Person:
     def set_city(self, city):
         """Mutator for city."""
         self.city = city
+    
+    def set_first_name(self, first_name):
+        self.first_name = first_name
+
+    def set_last_name(self, last_name):
+        self.last_name = last_name
+
+    def set_email_address(self, email_address):
+        self.email_address = email_address
+
+    def set_nickname(self, nickname):
+        self.nickname = nickname
+
+    def set_street_address(self, street_address):
+        self.street_address = street_address
+
+    def set_state(self, state):
+        self.state = state
+
+    def set_zip(self, zip):
+        self.zip = zip
+
+    def set_phone(self, phone):
+        self.phone = phone
+
+
+
+
+
 
     def get_first_name(self):
         """Accessor for first name"""
@@ -41,6 +70,27 @@ class Person:
     def get_last_name(self):
         """Accessor for last name"""
         return self.last_name
+    
+    def get_email_address(self):
+        return self.email_address
+    
+    def get_nickname(self):
+        return self.nickname 
+    
+    def get_street_address(self):
+        return self.street_address
+    
+    def get_city(self):
+        return self.city
+    
+    def get_state(self):
+        return self.state
+    
+    def get_zip(self):
+        return self.zip
+    
+    def get_phone(self):
+        return self.phone
 
     def __str__(self):
         """String representation for the object"""
