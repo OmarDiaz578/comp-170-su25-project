@@ -1,4 +1,4 @@
-from datetime import datetime  # to pull today's date
+from datetime import date  # to pull today's date
 
 
 class Birthday:
@@ -13,44 +13,43 @@ class Birthday:
         January 1."""
         # Protect month value
         if month >= 1 and month <= 12:
-            self.__month = month
+            self.month = month
         else:
             # In case of out of range month, default to January
-            self.__month = 1
+            self.month = 1
         # At this point we have a legit month value 1-12.
         # Protect day value; use -1 in array to synchronize months
         if day >= 1 and day <= Birthday.days_in_month[month - 1]:
-            self.__day = day
+            self.day = day
         else:
             # In case of out of range day, default is 1st of month
-            self.__day = 1
+            self.day = 1
 
     # end basic constructor
 
     def set_day(self, day):
         """Mutator for day. It only changes the day value if the
         passed argument is within a valid range for the given month."""
-        if day > 0 and day <= Birthday.days_in_month[self.__month - 1]:
-            self.__day = day
+        if day > 0 and day <= Birthday.days_in_month[self.month - 1]:
+            self.day = day
 
     # end set_day
 
     # Accessor for __month
     def get_month(self):
-        return self.__month
+        return self.month
 
     # Accessor for __day
     def get_day(self):
-        return self.__day
+        return self.day 
 
     # Compute days to birthday
     def days_until(self):
-        # obtain today's date
-        # extract month and day
-        # subtract from birthday
-        # return # of days
-        today = datetime.today()
-        # COMPLETE THIS FOR YOUR ASSIGNMENT
+         today = date.today()
+         next_bd = date(today.year, self.month, self.day)
+         if next_bd < today:
+             next_bd = date(today.year +1, self.month, self.day)
+         return (next_bd - today).days
 
     def day_in_year(self, month, day):
         """calculates the day number within the year corresponding to a given
@@ -65,7 +64,3 @@ class Birthday:
         return f"[ {self.get_month()}/{self.get_day()} ]"
 
 
-demo = Birthday(6, 29)
-
-print(demo.day_in_year(6, 29))  # d_b
-print(demo.day_in_year(4, 29))  # d_t

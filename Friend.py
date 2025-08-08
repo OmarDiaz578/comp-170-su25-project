@@ -20,15 +20,19 @@ class Person:
         self.zip = None
         self.phone = None
 
-    def introduce(self):
-        """Simple way for a person object to introduce itself."""
-        print(
-            f"Hello, my name is {self.first_name} and my birthday is on {self.say_birthday()}"
-        )
+   # def introduce(self):
+    #    """Simple way for a person object to introduce itself."""
+    #    print(f"Hello, my name is {self.first_name} and my birthday is on {self.say_birthday()})
 
     def set_birthday(self, month, day):
         """Mutator for birthday. Uses our very own Birthday class."""
         self._birthday = Birthday(month, day)
+
+    def set_month(self, month):
+        self.month = month
+
+    def set_day(self, day):
+        self.day = day
 
     def set_city(self, city):
         """Mutator for city."""
@@ -66,6 +70,12 @@ class Person:
     def get_first_name(self):
         """Accessor for first name"""
         return self.first_name
+    
+    def get_month(self):
+        return self.month
+    
+    def get_day(self):
+        return self.day
 
     def get_last_name(self):
         """Accessor for last name"""
