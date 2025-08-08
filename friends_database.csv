@@ -1,21 +1,22 @@
-frist_name,last_name,birth_month,birth_day,email_address,nickname,street_address,city,state,zip,phone
-Emma,Walker,,,emma.walker@example.com,Em,432 Oak St,Chicago,IL,60605,555-0101
-Liam,Johnson,,,liam.johnson@example.com,Li,127 Pine Ave,New York,NY,10012,555-0102
-Olivia,Brown,,,olivia.brown@example.com,Liv,89 Maple Rd,Los Angeles,CA,90015,555-0103
-Noah,Jones,,,noah.jones@example.com,No,56 Elm St,Houston,TX,77002,555-0104
-Ava,Miller,,,ava.miller@example.com,Ave,210 Cedar Blvd,Phoenix,AZ,85003,555-0105
-Elijah,Davis,,,elijah.davis@example.com,Eli,77 Birch Ln,Philadelphia,PA,19103,555-0106
-Sophia,García,,,sophia.garcia@example.com,Soph,314 Walnut St,San Antonio,TX,78205,555-0107
-William,Martinez,,,william.martinez@example.com,Will,902 Spruce Dr,San Diego,CA,92101,555-0108
-Isabella,Hernández,,,isabella.hernandez@example.com,Bella,145 Poplar Ct,Dallas,TX,75201,555-0109
-James,Lopez,,,james.lopez@example.com,Jim,38 Cherry Way,San Jose,CA,95112,555-0110
-Mia,González,,,mia.gonzalez@example.com,M,521 Aspen Pl,Austin,TX,73301,555-0111
-Benjamin,Wilson,,,benjamin.wilson@example.com,Ben,674 Pinecrest Rd,Jacksonville,FL,32202,555-0112
-Charlotte,Anderson,,,charlotte.anderson@example.com,Char,188 Ridgeview Dr,Fort Worth,TX,76102,555-0113
-Logan,Thomas,,,logan.thomas@example.com,Log,307 Highland St,Columbus,OH,43085,555-0114
-Amelia,Taylor,,,amelia.taylor@example.com,Millie,253 Lakeview Blvd,Charlotte,NC,28202,555-0115
-Lucas,Moore,,,lucas.moore@example.com,Luke,419 Greenway Ave,San Francisco,CA,94102,555-0116
-Harper,Jackson,,,harper.jackson@example.com,Harp,86 Brookside Dr,Indianapolis,IN,46204,555-0117
-Mason,Martin,,,mason.martin@example.com,Mase,772 Oakview Rd,Seattle,WA,98101,555-0118
-Evelyn,Lee,,,evelyn.lee@example.com,Eve,519 Ridge Rd,Denver,CO,80203,555-0119
-Ethan,Perez,,,ethan.perez@example.com,Eth,263 Willow St,Washington,DC,20001,555-0120
+first_name,last_name,birth_month,birth_day,email_address,nickname,street_address,city,state,zip,phone
+Emma,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3ec2cc0>>,,,emma.walker@example.com,Em,432 Oak St,Chicago,IL,60605,555-0101
+Liam,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3ec2e10>>,,,liam.johnson@example.com,Li,127 Pine Ave,New York,NY,10012,555-0102
+Olivia,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3ec2f60>>,,,olivia.brown@example.com,Liv,89 Maple Rd,Los Angeles,CA,90015,555-0103
+Noah,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3ec30e0>>,,,noah.jones@example.com,No,56 Elm St,Houston,TX,77002,555-0104
+Ava,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3ec3260>>,,,ava.miller@example.com,Ave,210 Cedar Blvd,Phoenix,AZ,85003,555-0105
+Elijah,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3ec33b0>>,,,elijah.davis@example.com,Eli,77 Birch Ln,Philadelphia,PA,19103,555-0106
+Sophia,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3ec34d0>>,,,sophia.garcia@example.com,Soph,314 Walnut St,San Antonio,TX,78205,555-0107
+William,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3ec35f0>>,,,william.martinez@example.com,Will,902 Spruce Dr,San Diego,CA,92101,555-0108
+Isabella,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3ec3710>>,,,isabella.hernandez@example.com,Bella,145 Poplar Ct,Dallas,TX,75201,555-0109
+James,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3ec3860>>,,,james.lopez@example.com,Jim,38 Cherry Way,San Jose,CA,95112,555-0110
+Mia,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3ec3980>>,,,mia.gonzalez@example.com,M,521 Aspen Pl,Austin,TX,73301,555-0111
+Benjamin,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3ec3aa0>>,,,benjamin.wilson@example.com,Ben,674 Pinecrest Rd,Jacksonville,FL,32202,555-0112
+Charlotte,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3ec3b90>>,,,charlotte.anderson@example.com,Char,188 Ridgeview Dr,Fort Worth,TX,76102,555-0113
+Logan,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3ec3ce0>>,,,logan.thomas@example.com,Log,307 Highland St,Columbus,OH,43085,555-0114
+Amelia,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3ec3e30>>,,,amelia.taylor@example.com,Millie,253 Lakeview Blvd,Charlotte,NC,28202,555-0115
+Lucas,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3ec3f80>>,,,lucas.moore@example.com,Luke,419 Greenway Ave,San Francisco,CA,94102,555-0116
+Harper,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3eac110>>,,,harper.jackson@example.com,Harp,86 Brookside Dr,Indianapolis,IN,46204,555-0117
+Mason,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3eac290>>,,,mason.martin@example.com,Mase,772 Oakview Rd,Seattle,WA,98101,555-0118
+Evelyn,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3eac410>>,,,evelyn.lee@example.com,Eve,519 Ridge Rd,Denver,CO,80203,555-0119
+Ethan,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3eac560>>,,,ethan.perez@example.com,Eth,263 Willow St,Washington,DC,20001,555-0120
+Omar,<bound method Person.get_last_name of <Friend.Person object at 0x7783e3ec1e80>>,,,None,None,None,None,None,None,None

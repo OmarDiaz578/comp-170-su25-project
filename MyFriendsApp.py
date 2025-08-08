@@ -49,19 +49,26 @@ def load_friends(filename):
 def save_friends(filename, friends):
     filename = friends_file  
     header = ['first_name', 'last_name','birth_month','birth_day','email_address','nickname','street_address','city','state','zip','phone']
+    friends = friends or []
     f = open(filename, 'w', encoding='utf-8')
     f.write(','.join(header) + '\n')
     for p in friends:
-        bm = ''
-        bd= ''
-        if p is not None:
-            bm = str(p.birthday.get_month())
-            bd = str(p.get_date())
-        row = [p.get_first_name(), p.get_last_name(), bm, bd,
-               getattr(p, 'email_address', ''), getattr(p, 'nickname', ''),
-               getattr(p, 'street_address', ''), getattr(p, 'city', ''),
-               getattr(p, 'state', ''), getattr(p, 'zip', ''), getattr(p, 'phone', '')]
+        if p is None:
+            continue
+        bm = bd = ''
+        if hasattr(p, 'birthday') and p.birthday:
+            try:
+                bm = str(p.birthday.month)
+                bd = str(p.birthday.day)
+            except Exception:
+                pass
+        row = [p.get_first_name() or '', p.get_last_name, bm, bd, 
+        getattr(p, 'email_address', ''), getattr(p, 'nickname', ''), 
+        getattr(p, 'street_address', ''), getattr(p, 'city', ''), 
+        getattr(p, 'state', ''), getattr(p, 'zip', ''), getattr(p, 'phone', '')]
+        row = [str(field) for field in row]
         f.write(','.join(row) + '\n')
+    f.close()
     
 
 def prompt_int(prompt, low, high):
